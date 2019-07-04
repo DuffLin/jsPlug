@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+</head>
+<body>
+
+<div class="pages">
+    <div id="pagination" style="padding: 150px;">
+        <!--<div class="pageBox">
+            <div class="pagination">
+                <a href="javasript:;" class="prev">上一页</a>
+                <a href="javasript:;" class="startPage current">1</a>
+                <a href="javasript:;">2</a>
+                <a href="javasript:;">3</a>
+                <a href="javasript:;">4</a>
+                <span class="paginationBreak">...</span>
+                <a href="javasript:;" class="endPage">15</a>
+                <a href="javasript:;" class="next">下一页</a>
+            </div>
+            <div class="pageAll">共<b class="allPage">15</b>页</div>
+            <div class="pageGo">
+                跳转<input type="text" class="pageInput">页
+                <ul class="pageSelect">
+                    <li data-page="1">1</li>
+                    <li data-page="2">2</li>
+                    <li data-page="3">3</li>
+                    <li data-page="4">4</li>
+                    <li data-page="5">5</li>
+                    <li data-page="6">6</li>
+                    <li data-page="7">7</li>
+                    <li data-page="8">8</li>
+                    <li data-page="9">9</li>
+                </ul>
+            </div>
+        </div>-->
+    </div>
+
+</div>
+
+
+<script src="../jquery-1.8.3.min.js"></script>
+<script src="page.js"></script>
+<script type="text/javascript">
+    var allPageNum = 22;
+    $("#pagination").pagination({
+        allPageNum: allPageNum,
+        currentPage: 1,
+        callback:function(current){
+            //console.log(p);
+        }
+
+    });
+</script>
+</body>
+</html>

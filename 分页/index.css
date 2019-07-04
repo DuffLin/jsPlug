@@ -1,0 +1,75 @@
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pageBox::after,.otherPage::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.pageBox,.otherPage{
+    *zoom: 1;
+}
+
+.pagination,.otherPage{
+    font-size: 0;
+    float: left;
+}
+.pagination a{
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 2px;
+    line-height: 28px;
+    color: #222;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+.pagination a.current{
+    background: #fc7d28;
+    color: #fff;
+    border: 1px solid #fc7d28;
+}
+.pagination span{
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 2px;
+    line-height: 28px;
+    color: #222;
+    font-size: 12px;
+}
+.pageInput{
+    width: 60px;
+    padding: 0 10px;
+    line-height: 26px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    outline: none;
+}
+.pageAll,.pageGo{
+    float: left;
+    position: relative;
+    font-size: 14px;
+    color: #999;
+}
+.pageSelect{
+    display: none;
+    position: absolute;
+    max-height: 200px;
+    left: 41px;
+    right: 29px;
+    top: 28px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #FFF;
+}
+.pageSelect li{
+    text-align: center;
+}
+.pageSelect li:hover{
+    background: #e9e9e9;
+}
